@@ -1,0 +1,1 @@
+1. delete every pods in clean-up ns: kubectl delete pods --all -n clean-up
