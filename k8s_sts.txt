@@ -1,0 +1,22 @@
+Server:		10.96.0.10
+Address:	10.96.0.10:53
+
+
+Name:	random-generator-0.random-generator.default.svc.cluster.local
+Address: 10.244.0.122
+
+Server:		10.96.0.10
+Address:	10.96.0.10:53
+
+
+Name:	random-generator-1.random-generator.default.svc.cluster.local
+Address: 10.244.0.121
+
+Server:		10.96.0.10
+Address:	10.96.0.10:53
+
+
+Name:	random-generator-2.random-generator.default.svc.cluster.local
+Address: 10.244.0.120
+
+pod "dns-test" deleted from default namespace
