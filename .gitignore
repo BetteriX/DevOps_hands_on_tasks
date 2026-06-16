@@ -3,3 +3,5 @@
 
 # But keep Git configuration files
 !.gitignore
+
+secret
