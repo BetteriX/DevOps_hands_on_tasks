@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yellow-color
+  namespace: default
+  labels:
+    color: yellow
+    app: selected
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      color: yellow
+  template:
+    metadata:
+      labels:
+        color: yellow
+        app: selected
+    spec:
+      containers:
+        - name: color
+          image: sbeliakou/color:v1
+          env:
+            - name: COLOR
+              value: "yellow"
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: yellow-svc
+spec:
+  type: ClusterIP
+  selector:
+    color: yellow
+  ports:
+    - port: 8080
+      targetPort: 80
