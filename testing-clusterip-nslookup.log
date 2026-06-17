@@ -1,0 +1,16 @@
+Server:		10.96.0.10
+Address:	10.96.0.10:53
+
+** server can't find pod-info-svc.cluster.local: NXDOMAIN
+
+** server can't find pod-info-svc.svc.cluster.local: NXDOMAIN
+
+** server can't find pod-info-svc.cluster.local: NXDOMAIN
+
+
+** server can't find pod-info-svc.svc.cluster.local: NXDOMAIN
+
+Name:	pod-info-svc.default.svc.cluster.local
+Address: 10.106.100.170
+
+pod "busybox" deleted from default namespace
