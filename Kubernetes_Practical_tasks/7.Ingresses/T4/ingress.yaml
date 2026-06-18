@@ -20,14 +20,14 @@ spec:
               service:
                 name: lime-svc
                 port:
-                  number: 80
+                  number: 8080
             path: /lime
             pathType: ImplementationSpecific
           - backend:
               service:
                 name: purple-svc
                 port:
-                  number: 80
+                  number: 8080
             path: /purple
             pathType: ImplementationSpecific
 status:
